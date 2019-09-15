@@ -30,7 +30,7 @@ var version = "@VERSION",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
-
+		//无new 化操作，工厂模式，不用每次new 一个
 		// The jQuery object is actually just the init constructor 'enhanced'
 		// Need init if jQuery is called (just allow error to be thrown if not included)
 		return new jQuery.fn.init( selector, context );
